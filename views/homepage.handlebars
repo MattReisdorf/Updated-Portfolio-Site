@@ -5,7 +5,7 @@
             <a class = 'nav-link nav-links-css' href = '#home'>Home</a>
         </li>
         <li class = 'nav-item'>
-            <a class = 'nav-link nav-links-css' href = '#'>Experience</a>
+            <a class = 'nav-link nav-links-css' href = '#experience'>Skills</a>
         </li>
         <li class = 'nav-item'>
             <a class = 'nav-link nav-links-css' href = '#'>Projects</a>
@@ -23,12 +23,25 @@
     <div class = 'container'>
         <div class = 'row row-margin' id = 'home'>
             <div class = 'col-sm-12 col-md-4'>
-                <div >
-                    <div>
-                        <img id = 'headshot' src = './files/images/headshot-cropped.png' alt = 'headshot'>
-                        <div class = 'socials-container'>
-                            <p>PLACEHOLDER</p>
-                        </div>
+                <div class = 'headshot-container'>
+                    <img id = 'headshot' src = './files/images/headshot-cropped.png' alt = 'headshot'>
+                    <div class = 'socials-container'>
+                        <a href = 'https://github.com/MattReisdorf' target = '_blank'>
+                            <img id = 'github-img' src = './files/images/github.png'>
+                        </a>
+                        <a href = 'https://www.linkedin.com/in/matthew-reisdorf/' target = '_blank'>
+                            <img id = 'linked-in-img' src = './files/images/linkedin.png'>
+                        </a>
+                        <a href = 'https://soundcloud.com/matt-reisdorf' target = '_blank'>
+                            <img id = 'sc-img' src = './files/images/soundcloud.png'>
+                        </a>
+                        <a href = 'https://steamcommunity.com/profiles/76561198116700731' target = '_blank'>
+                            <img id = 'steam-img' src = './files/images/steam.png'>
+                        </a>
+                        <a href = 'mailto:mreisdorf9717@gmail.com'>
+                            <img id = 'email-img' src = './files/images/email.png'>
+                        </a>
+
                     </div>
                 </div>
             </div>
@@ -51,20 +64,53 @@
                         </p>
                         <p id = 'biography-paragraph'>
                             Outside of my current work and studies, I spend my time making music with a couple local producers,
-                            participating in various board sports, and exploring the urban jungle of Chicago, IL. 
+                            riding any kind of board I can get my hands (or feet) on, and exploring the urban jungle of Chicago, IL. 
                         </p>
                     </div>
                 </div>
-                {{!-- <div class = 'centered placeholder-box'> About Me </div> --}}
+
+                {{!-- IDK IF IM GONNA USE THIS OR NOT --}}
+                {{!-- <div class = 'row'>
+                    <div class = 'col-sm-12 col-md-6'>
+                        
+                    </div>
+                    <div class = 'col-sm-12 col-md-6'>
+
+                    </div>
+                </div> --}}
+            </div>
+        </div> 
+    </div>
+
+
+    <div class = 'container'>
+        <div class = 'row' id = 'experience'>
+            <div class = 'col-sm-12 col-md-12'>
+                <p class = 'centered' id = 'experience-title'>Skills</p>
             </div>
         </div>
 
-        <div class = 'row' id = 'experience'>
+        <div class = 'row row-margin'>
             <div class = 'col-sm-12 col-md-4'>
-                PLACEHOLDER
+                <div class = 'centered lang-container'>
+                    <img src = './files/images/python.png'>
+                    <p class = 'lang-text'>Python</p>
+                    <p id = 'python-tech'>Flask, Kivy, NumPy, Matplotlib</p>
+                </div>
             </div>
-            <div class = 'col-sm-12 col-md-8'>
-                PLACEHOLDER
+            <div class = 'col-sm-12 col-md-4'>
+                <div class = 'centered lang-container'>
+                    <img src = './files/images/js.png'>
+                    <p class = 'lang-text'>JavaScript</p>
+                    <p id = 'js-tech'>Node.js, jQuery, Express.js, Handlebars</p>
+                </div>
+            </div>
+            <div class = 'col-sm-12 col-md-4'>
+                <div class = 'centered' id = 'lang-container'>
+                    <img src = './files/images/db.png'>
+                    <p class = 'lang-text'>Databases</p>
+                    <p id = 'db-tech'>MySQL, MongoDB, Azure SQL</p>
+                </div>
             </div>
         </div>
     </div>

@@ -5,6 +5,21 @@ body {
     color: white; /* Remove this later */
 }
 
+p::selection,
+p::-moz-selection {
+    background: #CCF5E3;
+    color: black;
+}
+
+.centered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* min-height: 100vh; */
+}
+
 
 
 /* NAV STYLING */
@@ -41,16 +56,6 @@ body {
     margin-top: 50px;
 }
 
-
-.centered {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    min-height: 100vh;
-}
-
 .placeholder-box {
     background-color: red;
 }
@@ -73,7 +78,77 @@ body {
 }
 
 .socials-container {
-    background-color: red;
+    /* background-color: red; */
     margin-right: 132px;
     margin-top: 25px;
+}
+
+.headshot-container {
+    margin-top: -50px;
+}
+
+#email-img {
+    margin-top: 4px;
+    margin-left: 16px;
+    width: 25%;
+    height: auto;
+}
+
+#email-img:hover {
+    transform: scale(1.1);
+}
+
+#linked-in-img {
+    margin-left: 15px;
+}
+
+#linked-in-img:hover {
+    transform: scale(1.1);
+}
+
+#github-img {
+    margin-left: 15px;
+}
+
+#github-img:hover {
+    /* transition: transform .25s ease; */
+    transform: scale(1.1);
+}
+
+#sc-img {
+    margin-left: 15px;
+}
+
+#sc-img:hover {
+    /* transition: transform .25s ease; */
+    transform: scale(1.1);
+}
+
+#steam-img {
+    margin-left: 50px;
+    margin-top: 10px;
+    width: 22%;
+    height: auto;
+}
+
+#steam-img:hover {
+    transform: scale(1.1);
+}
+
+
+/* EXPERIENCE SECTION STYLING */
+
+#experience {
+    margin-top: 85px;
+}
+
+#experience-title {
+    font-size:2em;
+    color: #FFECD6;
+}
+
+.lang-text {
+    margin-top: 10px;
+    color: #FFECD6;
+    font-size: 1.2em;
 }
