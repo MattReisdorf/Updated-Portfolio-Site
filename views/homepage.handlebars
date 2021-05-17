@@ -2,26 +2,28 @@
     <h2 id = 'matt'>Matt Reisdorf</h2>
     <ul class = 'nav justify-content-end my-nav-list-css'>
         <li class = 'nav-item'>
-            <a class = 'nav-link nav-links-css' href = '#home'>Home</a>
+            <a class = 'nav-link nav-links-css' href = '#bio'>Bio</a>
         </li>
         <li class = 'nav-item'>
             <a class = 'nav-link nav-links-css' href = '#experience'>Skills</a>
         </li>
         <li class = 'nav-item'>
-            <a class = 'nav-link nav-links-css' href = '#'>Projects</a>
+            <a class = 'nav-link nav-links-css' href = '#projects'>Projects</a>
         </li>
         <li class = 'nav-item'>
             <a class = 'nav-link nav-links-css' href = '/files/Resume.pdf'>Resume</a>
         </li>
         <li class = 'nav-item'>
-            <a class = 'nav-link nav-links-css' href = '#'>TEST</a>
+            <a class = 'nav-link nav-links-css' href = '#contact'>Contact</a>
         </li>
     </ul>
 </nav>
 
+<div id = "bio"></div>
+
 <main>
     <div class = 'container'>
-        <div class = 'row row-margin' id = 'home'>
+        <div class = 'row row-margin'>
             <div class = 'col-sm-12 col-md-4'>
                 <div class = 'headshot-container'>
                     <img id = 'headshot' src = './files/images/headshot-cropped.png' alt = 'headshot'>
@@ -41,12 +43,11 @@
                         <a href = 'mailto:mreisdorf9717@gmail.com'>
                             <img id = 'email-img' src = './files/images/email.png'>
                         </a>
-
                     </div>
                 </div>
             </div>
             <div class = 'col-sm-12 col-md-8'>
-                <div class = 'row'>
+                <div class = 'row row-margin'>
                     <div class = 'col-sm-4'>
                         <p id = 'biography-title'>Biography</p>
                     </div>
@@ -89,8 +90,7 @@
                 <p class = 'centered' id = 'experience-title'>Skills</p>
             </div>
         </div>
-
-        <div class = 'row row-margin'>
+        <div class = 'row row-margin-2'>
             <div class = 'col-sm-12 col-md-4'>
                 <div class = 'centered lang-container'>
                     <img src = './files/images/python.png'>
@@ -115,4 +115,114 @@
         </div>
     </div>
 
+    <div class = 'container'>
+        <div class = 'row' id = 'projects'>
+            <div class = 'col-sm-12 col-md-12'>
+                <p class = 'centered' id = 'projects-title'>Projects</p>
+            </div>
+        </div>
+
+        <div class = 'row row-margin-2'>
+            <div class = 'col-sm-12 col-md-4'>
+                <div class = 'centered proj-container'>
+                    <div class = 'card card-background'>
+                        <p class = 'centered' id = 'scaled'>Scaled</p>
+                        <a href = 'https://sleepy-falls-53764.herokuapp.com/' target = '_blank'>
+                            <img src = './files/images/scaled.png'>
+                        </a>
+                        <div class = 'card-body'>
+                            <p class = 'card-text'>
+                                Resource website for users to
+                                create and practice lessons based on musical scales.
+                                Users can create an account, and their lessons will be
+                                isolated from all other user's lessons.
+                            </p>
+                            <p class = 'card-text'>
+                                Utilizes a pitch detection algorithm to move the user through their lesson. 
+                                Works best with an audio interface to isolate the input, but any device microphone will suffice.
+                            </p>
+                            <p class = 'card-text'>
+                                The repository for this project can be found
+                                <a id = 'repo-link' href = 'https://github.com/MattReisdorf/Project2-Music-Lessons' target = '_blank'>
+                                here.
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class = 'col-sm-12 col-md-4'>
+                <div class = 'centered proj-container'>
+                    <div class = 'card card-background'>
+                        <p class = 'centered' id = 'reddit'>Translate Bot</p>
+                        <a href = 'https://github.com/MattReisdorf/r-France-Post-Title-Translator' target = '_blank'>
+                            <img src = './files/images/reddit.png'>
+                        </a>
+                        <div class = 'card-body'>
+                            <p class = 'card-text'>
+                                Command line python script designed to translate any post or comment on reddit. 
+                                Currently defaults to r/France and English results, but any subreddit or language can be targeted
+                                by altering the parameters of the reddit query and/or translator API.
+                                </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <div class = 'col-sm-12 col-md-4'>
+                <div class = 'centered proj-container'>
+                    <div class = 'card card-background'>
+                        <p class = 'centered' id = 'unify'>Unify</p>
+                        <a href = 'https://vygoth.github.io/Unify/' target = '_blank'>
+                            <img src = './files/images/Unify.png'>
+                        </a>
+                        <div class = 'card-body'>
+                            <p class = 'card-text'>
+                                Proof of concept website to connect
+                                workers with local unions in the Chicago area.
+                                Utilizes Google Maps API to show union locations
+                                and a webscraper to grab relevant news articles.
+                            </p>
+                            <p class = 'card-text'>
+                                The website is live, but the APIs are currently
+                                disconnected to prevent over-use charges.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    {{!-- EMAIL FORM WITH PHP, NOT WORKING RN --}}
+    {{!-- <div class = 'container'>
+        <div class = 'row' id = 'contact'>
+            <div class = 'col-sm-12'>
+                <p class = 'centered' id = 'contact-title'>Contact</p>
+            </div>
+        </div>
+        <div class = 'row row-margin-2'>
+
+            <div class = 'col-sm-12'>
+                <form action = './php/mail.php'>
+                    <div class = 'form-group'>
+                        <label name = 'name'>Name</label>
+                        <input type = 'text' class = 'form-control'>
+                    </div>
+                    <div class = 'form-group'>
+                        <label name = 'email'>Email</label>
+                        <input type = 'email' class = 'form-control'>
+                    </div>
+                    <div class = 'form-group'>
+                        <label name = 'message'>Message</label>
+                        <input type = 'text' class = 'form-control'>
+                    </div>
+                    <button type = 'submit' class = 'btn btn-primary'>Submit</button>
+            
+                </form>
+            </div>
+            
+        </div>
+    </div> --}}
 </main>

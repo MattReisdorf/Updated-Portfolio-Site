@@ -152,3 +152,58 @@ p::-moz-selection {
     color: #FFECD6;
     font-size: 1.2em;
 }
+
+.row-margin-2 {
+    margin-top: 5px;
+}
+
+
+
+
+
+/* PROJECTS SECTION STYLING */
+#projects{
+    margin-top: 85px;
+}
+
+#projects-title {
+    font-size: 2em;
+    color: #FFECD6;
+}
+
+.card-background {
+    background-color: #373943;
+}
+
+#unify {
+    margin-top:5px;
+    margin-bottom: 2px;
+    color:#FFECD6;
+}
+
+#reddit {
+    margin-top:5px;
+    margin-bottom: 2px;
+    color:#FFECD6;
+}
+
+#scaled {
+    margin-top:5px;
+    margin-bottom: 2px;
+    color:#FFECD6;
+}
+
+#repo-link {
+    color: #FFECD6;
+}
+
+
+/* CONTACTS SECTION STYLING */
+#contact{
+    margin-top: 85px;
+}
+
+#contact-title {
+    font-size: 2em;
+    color: #FFECD6;
+}
