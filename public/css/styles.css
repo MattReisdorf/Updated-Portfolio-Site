@@ -1,0 +1,79 @@
+/* UNIVERSAL STYLING ??? */
+body {
+    background-color: #25262D;
+    font-family: 'Didact Gothic', sans-serif;
+    color: white; /* Remove this later */
+}
+
+
+
+/* NAV STYLING */
+#matt {
+    position: absolute;
+    padding-left: 80px;
+    /* font-family: 'Didact Gothic', sans-serif; */
+    color: black; /* Remove after taking out body color */
+}
+
+.my-nav-css {
+    background-color: white;
+    padding-top: 12px;
+    padding-bottom: 10px;
+}
+
+.my-nav-list-css{
+    padding-right: 40px;
+}
+
+.nav-links-css {
+    /* font-family: 'Didact Gothic', sans-serif; */
+    color: black;
+}
+
+.nav-links-css:hover {
+    color: #666669;
+}
+
+
+
+/* ABOUT SECTION STYLING */
+.row-margin {
+    margin-top: 50px;
+}
+
+
+.centered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.placeholder-box {
+    background-color: red;
+}
+
+#biography-title {
+    /* font-family: 'Didact Gothic', sans-serif; */
+    font-size:2em;
+    color: #FFECD6;
+    padding-left: 3px;
+}
+
+#biography-paragraph {
+    /* font-family: 'Didact Gothic', sans-serif; */
+    color: #DDDEE3;
+}
+
+#headshot{
+    border-radius: 50%;
+    margin-top: 67px;
+}
+
+.socials-container {
+    background-color: red;
+    margin-right: 132px;
+    margin-top: 25px;
+}
