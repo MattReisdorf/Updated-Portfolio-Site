@@ -302,3 +302,40 @@ p::-moz-selection {
         height: auto;
     }
 }
+
+@media screen and (max-width: 650px) {
+    #matt {
+        display: none;
+    }
+
+    .my-nav-css {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    
+}
+
+@media screen and (max-width: 574px) {
+    .socials-container {
+        display: none;
+    }
+
+    .headshot-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #headshot {
+        margin-left: 0;
+        padding: 0;
+    }
+   
+}
+
