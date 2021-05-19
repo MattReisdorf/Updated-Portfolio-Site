@@ -20,7 +20,14 @@ p::-moz-selection {
     /* min-height: 100vh; */
 }
 
-
+.really-centered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 15vh;
+}
 
 /* NAV STYLING */
 #matt {
@@ -181,10 +188,23 @@ p::-moz-selection {
     color:#FFECD6;
 }
 
+#unify-top {
+    padding-top: 45px;
+}
+
+#unify-bottom {
+    padding-bottom: 45px;
+}
+
 #reddit {
     margin-top:5px;
     margin-bottom: 2px;
     color:#FFECD6;
+}
+
+#python {
+    margin-top: 76px;
+    margin-bottom: 76px;
 }
 
 #scaled {
@@ -206,4 +226,79 @@ p::-moz-selection {
 #contact-title {
     font-size: 2em;
     color: #FFECD6;
+}
+
+
+.footer {
+    margin-bottom: -16px;
+    background-color: #121316;
+}
+
+
+
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+    .socials-container {
+        margin-right: 73px;
+    }
+
+    #unify-top {
+        padding-top: 56px;
+    }
+
+    #unify-bottom {
+        padding-bottom: 56px;
+    }
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+    .socials-container {
+        margin-right: -7px;
+    }
+
+    #unify-top {
+        padding-top: 68px;
+    }
+
+    #unify-bottom {
+        padding-bottom: 68px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .socials-container {
+        margin-right: 0px;
+        padding-left: 84px;
+    }
+
+    #unify-top {
+        padding-top: 0px;
+    }
+
+    #unify-bottom {
+        padding-bottom: 0px;
+    }
+
+    #python {
+        margin: 0px;
+    }
+
+    .proj-container {
+        margin-bottom: 10px;
+    }
+
+    #headshot {
+        margin-left: 153px;
+    }
+
+    #steam-img{
+        width: 11.7%;
+        height: auto;
+        margin-left: 15px;
+        margin-top: 0px;
+    }
+
+    #email-img {
+        width: 11.7%;
+        height: auto;
+    }
 }

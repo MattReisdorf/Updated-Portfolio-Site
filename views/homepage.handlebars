@@ -13,9 +13,6 @@
         <li class = 'nav-item'>
             <a class = 'nav-link nav-links-css' href = '/files/Resume.pdf'>Resume</a>
         </li>
-        <li class = 'nav-item'>
-            <a class = 'nav-link nav-links-css' href = '#contact'>Contact</a>
-        </li>
     </ul>
 </nav>
 
@@ -82,7 +79,6 @@
             </div>
         </div> 
     </div>
-
 
     <div class = 'container'>
         <div class = 'row' id = 'experience'>
@@ -159,7 +155,7 @@
                             <img src = './files/images/reddit.png'>
                         </a>
                         <div class = 'card-body'>
-                            <p class = 'card-text'>
+                            <p class = 'card-text' id = 'python'>
                                 Command line python script designed to translate any post or comment on reddit. 
                                 Currently defaults to r/France and English results, but any subreddit or language can be targeted
                                 by altering the parameters of the reddit query and/or translator API.
@@ -176,13 +172,13 @@
                             <img src = './files/images/Unify.png'>
                         </a>
                         <div class = 'card-body'>
-                            <p class = 'card-text'>
+                            <p class = 'card-text' id = 'unify-top'>
                                 Proof of concept website to connect
                                 workers with local unions in the Chicago area.
                                 Utilizes Google Maps API to show union locations
                                 and a webscraper to grab relevant news articles.
                             </p>
-                            <p class = 'card-text'>
+                            <p class = 'card-text' id = 'unify-bottom'>
                                 The website is live, but the APIs are currently
                                 disconnected to prevent over-use charges.
                             </p>
@@ -192,8 +188,6 @@
             </div>
         </div>
     </div>
-
-
 
     {{!-- EMAIL FORM WITH PHP, NOT WORKING RN --}}
     {{!-- <div class = 'container'>
@@ -226,3 +220,8 @@
         </div>
     </div> --}}
 </main>
+
+
+<footer class = 'footer row-margin'>
+    <p class = 'really-centered'> Pretend Like I Have A Copyright </p>
+</footer>
